@@ -1,3 +1,9 @@
-<h2 id='title'>Welcome to Ember.js</h2>
-
 {{outlet}}
+
+<div id="footerlinks links">
+  {{#link-to 'projects'}}<i class="fa fa-circle">Projects</i>{{/link-to}}
+
+  {{#link-to 'resume'}}<i class="fa fa-circle">Resume</i>{{/link-to}}
+
+  {{#link-to 'index'}}<i class="fa fa-circle">Index</i>{{/link-to}}
+</div>

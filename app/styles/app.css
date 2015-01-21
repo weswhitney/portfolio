@@ -1,3 +1,60 @@
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html, body {
   margin: 20px;
+  background-color: black;
+  font-family: helvetica;
+  color: red;
+}
+
+header {
+  text-align: center;
+}
+
+h2 {
+}
+
+h3 {
+  color: blue;
+}
+
+p {
+  color: white;
+}
+
+.links {
+  position: absolute;
+  width: 559px;
+  height: 17px;
+  z-index: 4;
+  left: 149px;
+  top: 159;
+
+}
+
+.fa:hover {
+  font-size: 1rem;
+  color: red;
+}
+
+a {
+  color: white;
+}
+
+.column {
+  width: 50%;
 }
