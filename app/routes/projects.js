@@ -1,10 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+
   model: function() {
     return [
-      {project: "booklub"},
-      {project: "wesisms"}
-    ]
+    {
+      project: "booklub"
+    },
+    {
+      project: "wesisms"
+    }
+    ];
   }
+
 });

@@ -1,10 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  
   model: function() {
     return [
-  {job: "bartender"},
-  {job: "carwash"}
-  ]
-}
+    {
+      job: "bartender"
+    },
+    {
+      job: "carwash"
+    }
+    ];
+  }
+
 });

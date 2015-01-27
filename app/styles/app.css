@@ -16,9 +16,8 @@
 
 html, body {
   margin: 20px;
-  background-color: black;
+  background-color: white;
   font-family: helvetica;
-  color: red;
 }
 
 header {
@@ -26,14 +25,15 @@ header {
 }
 
 h2 {
+  
 }
 
 h3 {
-  color: blue;
+
 }
 
 p {
-  color: white;
+
 }
 
 .links {
@@ -48,11 +48,10 @@ p {
 
 .fa:hover {
   font-size: 1rem;
-  color: red;
 }
 
 a {
-  color: white;
+
 }
 
 .column {
