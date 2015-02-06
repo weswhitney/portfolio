@@ -1,62 +1,6 @@
 @import "reset";
 @import "bootstrap";
-/*
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  zoom: 1;
-}
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-html, body {
-  margin: 20px;
-  background-color: white;
-  font-family: helvetica;
-}
-
-header {
-  text-align: center;
-}
-
-.myimage {
-  width: 78%;
-}
-
-.links {
-  position: absolute;
-  width: 559px;
-  height: 17px;
-  z-index: 4;
-  left: 149px;
-  top: 159;
-
-}
-
-.fa:hover {
-  font-size: 1rem;
-}
-
-a {
-
-}
-
-.column {
-  width: 50%;
-}
- */
-
- /*
- * Globals
- */
  img {
    width: 100%;
  }
@@ -222,4 +166,8 @@ a {
  }
  .blog-footer p:last-child {
    margin-bottom: 0;
+ }
+
+ .icons {
+   width: 9.5%;
  }

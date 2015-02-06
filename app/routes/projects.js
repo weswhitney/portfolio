@@ -5,10 +5,14 @@ export default Ember.Route.extend({
   model: function() {
     return [
     {
-      project: "booklub",
+      project: "booKlub",
+      // project link
     },
     {
-      project: "wesisms"
+      project: "wesisms",
+    },
+    {
+      project: "gCamp"
     }
     ];
   }
