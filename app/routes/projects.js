@@ -6,7 +6,7 @@ export default Ember.Route.extend({
     return [
     {
       id: "1",
-      name: "booklub",
+      name: "booKlub.net",
       description: "A Rails app",
       url: "http://www.booklub.net/",
       github: "https://github.com/weswhitney/booklub",
@@ -15,7 +15,7 @@ export default Ember.Route.extend({
     },
     {
       id: "2",
-      name: "markdown editor",
+      name: "Markdown Editor",
       description: "An ember app",
       url: "https://gentle-earth-7745.herokuapp.com/",
       github: "https://github.com/weswhitney/markdown-editor",

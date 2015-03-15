@@ -1,15 +1,14 @@
     <div class="page-header">
       <h2 class="text-center">Projects</h2>
     </div>
-      
+
       {{#each project in model}}
             {{#if project.url}}
               <a {{bind-attr href=project.url}}> <strong><h3>{{project.name}}</h3></strong></a>
             {{else}}
               <strong><h3>{{project.name}}</h3></strong>
             {{/if}}
-                <a {{bind-attr href=project.github}}>GitHub Repo</a>
-            <img {{bind-attr src=project.image}}/>
+            <img class="project-screenshot"{{bind-attr src=project.image}}/>
             <p>
               <strong>
                 Description:
