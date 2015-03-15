@@ -22,6 +22,15 @@ export default Ember.Route.extend({
       skills: ["Ember app","Bootstrap"],
       image: "/markdown-editor.png",
     },
+    {
+      id: "3",
+      name: "gCamp",
+      description: "An Rails app",
+      url: "http://thawing-tundra-4075.herokuapp.com/",
+      github: "https://github.com/weswhitney/gCamp",
+      skills: ["Rails app","Bootstrap","associations","user authentication","third party API","feature specs"],
+      image: "/gcamp.png",
+    },
     ];
   }
 
