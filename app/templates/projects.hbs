@@ -3,29 +3,17 @@
     </div>
 
       {{#each project in model}}
+            <img class="project-screenshot"{{bind-attr src=project.image}}/>
+            <br>
+            <br>
             {{#if project.url}}
               <a {{bind-attr href=project.url}}> <strong><h3>{{project.name}}</h3></strong></a>
             {{else}}
               <strong><h3>{{project.name}}</h3></strong>
             {{/if}}
-            <img class="project-screenshot"{{bind-attr src=project.image}}/>
-            <p>
-              <strong>
-                Description:
-              </strong>
-            </p>
             {{project.description}}
-            <p>
-              <strong>
-                Skills learned:
-              </strong>
-            </p>
-            <ul>
-              {{#each project.skills}}
-              <li>{{.}}</li>
-              {{/each}}
-            </ul>
           </div>
         </div>
+        <hr>
       {{/each}}
     </section>
