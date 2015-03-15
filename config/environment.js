@@ -6,7 +6,6 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
-    adapterURL: process.env.ADAPTER_URL,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -14,28 +13,18 @@ module.exports = function(environment) {
       }
     },
 
-    contentSecurityPolicy: {
-        'default-src': "'none'",
-        'script-src': "'self'",
-        'font-src': "'self'",
-        'connect-src': "'self' localhost:3000",
-        'img-src': "'self'",
-        'style-src': "'self' 'unsafe-inline'",
-        'media-src': "'self'"
-      },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
   };
 
-
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    ENV.APP.LOG_VIEW_LOOKUPS = true;
+    // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
