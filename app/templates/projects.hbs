@@ -1,7 +1,7 @@
     <div class="page-header">
       <h2 class="text-center">Projects</h2>
     </div>
-
+    <div class="container">
       {{#each project in model}}
             <br>
             <br>
@@ -14,3 +14,4 @@
             <img class="project-screenshot"{{bind-attr src=project.image}}/>
         <hr>
       {{/each}}
+    </div>
