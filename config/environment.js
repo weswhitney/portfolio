@@ -13,7 +13,7 @@ module.exports = function(environment) {
       }
     },
 
-    ontentSecurityPolicy: {
+    contentSecurityPolicy: {
         'default-src': "'none'",
         'script-src': "'self'",
         'font-src': "'self'",
