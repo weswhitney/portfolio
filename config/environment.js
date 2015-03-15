@@ -13,11 +13,21 @@ module.exports = function(environment) {
       }
     },
 
+    ontentSecurityPolicy: {
+        'default-src': "'none'",
+        'script-src': "'self'",
+        'font-src': "'self'",
+        'connect-src': "'self' localhost:3000",
+        'img-src': "'self'",
+        'style-src': "'self' 'unsafe-inline'",
+        'media-src': "'self'"
+      },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
   };
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

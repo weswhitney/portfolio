@@ -1,9 +1,32 @@
     <header>
       <h2>Projects</h2>
     </header>
-    
-    {{#each}}
-    <h2>{{project}}</h2>
-    {{/each}}
 
-{{outlet}}
+      {{#each project in model}}
+            {{#if project.url}}
+              <a {{bind-attr href=project.url}}> <strong><h3>{{project.name}}</h3></strong></a>
+            {{else}}
+              <strong><h3>{{project.name}}</h3></strong>
+            {{/if}}
+                <a {{bind-attr href=project.github}}>GitHub Repo</a>
+            <img {{bind-attr src=project.image}}/>
+            <p>
+              <strong>
+                Description:
+              </strong>
+            </p>
+            {{project.description}}
+            <p>
+              <strong>
+                Skills learned:
+              </strong>
+            </p>
+            <ul>
+              {{#each project.skills}}
+              <li>{{.}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      {{/each}}
+    </section>
