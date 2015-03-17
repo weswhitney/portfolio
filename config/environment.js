@@ -11,6 +11,20 @@ module.exports = function(environment) {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       }
+
+
+
+    },
+
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' builds.emberjs.com",
+      'font-src': "'self' maxcdn.bootstrapcdn.com",
+      'connect-src': "'self' localhost:3000",
+      'img-src': "'self'",
+      'style-src': "'self' 'unsafe-inline'",
+      'style-src': "'self' 'unsafe-inline' maxcdn.bootstrapcdn.com",
+      'media-src': "'self'"
     },
 
     APP: {
