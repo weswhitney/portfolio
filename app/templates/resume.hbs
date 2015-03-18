@@ -4,7 +4,11 @@
 
 
     {{#each resume in model}}
-    <img class="project-screenshot"{{bind-attr src=resume.image}}/>
+    <h1>{{resume.company}}</h1>
+    <h4>{{resume.position}}</h4>
+    <h5>{{resume.location}}</h5>
+    <h5>{{resume.dates}}</h5>
+    <p>{{resume.description}}</p>
     <a {{bind-attr href=resume.url}}> <strong><h3>{{resume.name}}</h3></strong></a>
     {{/each}}
 
