@@ -3,9 +3,10 @@
     </div>
       {{#each project in model}}
             <br>
-            <br>
             {{#if project.url}}
-              <a {{bind-attr href=project.url}}> <strong><h3>{{project.name}}</h3></strong></a>
+              <a {{bind-attr href=project.url}}>{{project.name}}</a>
+              <br>
+              <br>
             {{else}}
               <strong><h3>{{project.name}}</h3></strong>
             {{/if}}
