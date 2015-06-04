@@ -108,6 +108,7 @@
  .blog-main {
    font-size: 18px;
    line-height: 1.5;
+   overflow: scroll;
  }
 
  /* Sidebar modules for boxing content */
@@ -182,4 +183,8 @@
 
 a:hover, a:focus {
   text-decoration: none;
+}
+
+.main-container {
+  position: fixed;
 }
