@@ -2,6 +2,15 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+          'default-src': "'none'",
+          'script-src': "'self'",
+          'font-src': "'self'",
+          'connect-src': "'self' *",
+          'img-src': "'self'",
+          'style-src': "'self' *",
+          'media-src': "'self'"
+    },
     modulePrefix: 'portfolio',
     environment: environment,
     baseURL: '/',
@@ -13,12 +22,12 @@ module.exports = function(environment) {
       }
     },
 
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
   };
-
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
