@@ -1,16 +1,16 @@
-    <div class="page-header">
-      <h2 class="text-center">Projects</h2>
-    </div>
-      {{#each project in model}}
-            <br>
-            {{#if project.url}}
-              <a {{bind-attr href=project.url}}>{{project.name}}</a>
-              <br>
-              <br>
-            {{else}}
-              <strong><h3>{{project.name}}</h3></strong>
-            {{/if}}
-            {{project.description}}
-            <a {{bind-attr href=project.url}}><img class="project-screenshot"{{bind-attr src=project.image}}/></a>
-        <hr>
-      {{/each}}
+<div class="page-header">
+  <h2 class="text-center">Projects</h2>
+</div>
+  {{#each project in model}}
+        <br>
+        {{#if project.url}}
+          <a {{bind-attr href=project.url}}>{{project.name}}</a>
+          <br>
+          <br>
+        {{else}}
+          <strong><h3>{{project.name}}</h3></strong>
+        {{/if}}
+        {{project.description}}
+        <a {{bind-attr href=project.url}}><img class="project-screenshot"{{bind-attr src=project.image}}/></a>
+    <hr>
+  {{/each}}
