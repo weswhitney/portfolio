@@ -1,31 +1,41 @@
-<div class="container">
-  <div class="blog-header">
-    <h1 class="blog-title">Wesley Whitney</h1>
-    <p class="lead blog-description">Full-Stack Web Developer</p>
+<div class="mainBox container">
+  <div class="jumbotron" style={{marginBottom: "0px",borderRadius: "0px"}}>
+    <h1>Wesley Whitney</h1>
+    <h2>Software Engineer</h2>
   </div>
-  <div class="row">
-    <div class="col-sm-3 blog-sidebar">
-      <div class="sidebar-module sidebar-module-inset">
-        <img src="image_small.png"/>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand btn">Wesley Whitney</a>
+          <a class="navbar-brand btn" >{{#link-to 'index'}}ABOUT{{/link-to}}</a>
+          <a class="navbar-brand btn" >{{#link-to 'index'}}PROJECTS{{/link-to}}</a>
+          <a class="navbar-brand btn" href="https://www.gosirvo.com/categories/dev-blog/">BLOG</a>
+        </div>
       </div>
-      <div class="sidebar-module">
-        <ol class="list-unstyled">
-          <li>{{#link-to 'index'}}My Story{{/link-to}}</li>
-          <li>{{#link-to 'projects'}}Projects{{/link-to}}</li>
-        </ol>
-      </div>
-      <div class="sidebar-module">
-        <ol class="list-unstyled">
-          <li>{{#link-to ''}}{{/link-to}}</li>
-          <li><a href="https://students.gschool.it/people/95"><img class="icons" src="gschool-logo_icon copy.png" alt="" /></a></li>
-          <li><a href="http://github.com/weswhitney"><img class="icons" src="GitHub-Mark_icon copy.png" alt=""/></a></li>
-          <li><a href="http://twitter.com/@wes_whitney"><img class="icons" src="Twitter_logo_blue_icon copy.png" alt="" /></a></li>
-          <li><a href="http://linkedin.com/in/wesleywhitney"><img class="icons" src="linked_in_icon copy.png" alt="" /></a></li>
-        </ol>
-      </div>
-    </div>
-    <div class="col-sm-8 col-sm-offset-1 blog-main">
+    </nav>
+  <div class="col-md-9">
     {{outlet}}
-    </div>
   </div>
+  <div class="col-md-3">
+    <p>I am a full stack developer or software engineer as my title suggests from Colorful Colorado.</p>
+      <div class="thumbnail">
+        <img src="image_small.png" />
+      </div>
+  </div>
+  <nav class="navbar navbar-default navbar-fixed-bottom container">
+      <div class="col-md-4">
+        <p class="navbar-text">copyright Wes Whitney 2015-2016</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <a href="https://students.gschool.it/people/95"><img class="icons" src="gschool-logo_icon copy.png" alt="" /></a>
+        <a href="http://github.com/weswhitney"><img class="icons" src="GitHub-Mark_icon copy.png" alt=""/></a>
+        <a href="http://twitter.com/@wes_whitney"><img class="icons" src="Twitter_logo_blue_icon copy.png" alt="" /></a>
+        <a href="http://linkedin.com/in/wesleywhitney"><img class="icons" src="linked_in_icon copy.png" alt="" /></a>
+      </div>
+  </nav>
 </div>
+
+
+
+
+
